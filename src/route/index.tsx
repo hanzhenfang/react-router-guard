@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from 'react-router'
+import { Navigate } from 'react-router'
 import Home from '../pages/home/index'
 import About from '../pages/about/index'
 import New from '../pages/new/index'
@@ -24,6 +24,7 @@ export const routerConfig = [
         element: <Home />,
         meta: {
           auth: true,
+          role: ['superadmin'],
         },
       },
       {

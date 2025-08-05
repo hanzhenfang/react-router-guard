@@ -9,15 +9,14 @@ export default function RouterGuard() {
 
   useEffect(() => {
     const token = localStorage.getItem('token')
-    console.log('location', location)
     if (location.pathname === '/login' && token) {
       navigate('/', { replace: true })
     }
 
+    // ['/home']
     if (authRoutes.includes(location.pathname)) {
       if (!token) {
         navigate('/login', { replace: true })
-      } else {
       }
     }
   }, [location])
