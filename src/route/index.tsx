@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from 'react-router'
+import { createBrowserRouter, Navigate, redirect } from 'react-router'
 import Home from '../pages/home/index'
 import About from '../pages/about/index'
 import New from '../pages/new/index'
@@ -48,6 +48,6 @@ export const routerConfig = [
   },
 ]
 
-// const router = createBrowserRouter(routerConfig)
+const router = createBrowserRouter(routerConfig)
 
-export default routerConfig
+export default router

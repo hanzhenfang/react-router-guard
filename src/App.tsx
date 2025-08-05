@@ -1,11 +1,9 @@
-import { RouterProvider, BrowserRouter } from 'react-router'
-import RouterGuard from './pages/router-guard/index'
+import { RouterProvider } from 'react-router'
+import router from './route'
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <RouterGuard />
-      </BrowserRouter>
+      <RouterProvider router={router} />
     </>
   )
 }
